@@ -1,7 +1,7 @@
 # BonjourMirrorIOS
 Mirror Discovery using Bonjour over Wifi for IOS
 
-IOS 14 has changed the networking such that Mirror Network Discovery does not seem to work.  To deal with this, I wanted to use Bonjour, which is not restricted.  After finding code examples for the server and client as Unity plugins, I was able to get that to work.
+IOS 14 has changed the networking such that [Mirror Network Discovery](https://mirror-networking.gitbook.io/docs/components/network-discovery) does not seem to work.  To deal with this, I wanted to use Bonjour, which is not restricted.  After finding code examples for the server and client as Unity plugins, I was able to get that to work.
 
 The present code uses bonjour to do multiplayer discovery for Mirror in Unity.  The present code will allow the host system to create their player and broadcast their service over bonjour.  When the client can connect and Mirror's Network manager is called to spawn the client player.  
 
