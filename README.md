@@ -29,4 +29,4 @@ To use this:
 9) Pressing Server should create a player and broadcast the service.
 10) Pressing Client from the other machine should create similar scenes in both machines.
 
-[image]( bonjourmirror.png )
+![image]( bonjourmirror.png )
