@@ -11,10 +11,22 @@ The present code uses bonjour to do multiplayer discovery for Mirror in Unity.  
 
 On phones with cellular data, the ip address for the server changes depending on whether cellular is on or not.  The present code addresses that by using Sockets to get the local ip address (GetLocalIPAddressSockets). 
 
-It took me forever to sort this stuff out, so I am making this code available to help anyone else.
-
 The Bonjour client code is from the [Unity Bonjour Browser example at the bottom of this page](https://docs.unity3d.com/2019.4/Documentation/Manual/PluginsForIOS.html).
 
 The Bonjour Broadcast code is from [UnityBonjourNativePluginOSX](https://github.com/naojitaniguchi/UnityBonjourNativePluginOSX).
 
+It took me forever to sort this stuff out, so I am making this code available to help anyone else.
 
+To use this:
+1) Create a Unity Project using 2019.4.5f1.
+2) Copy Asset folder contents to your project.
+3) Open scene.unity
+4) Download and import [Mirror from Asset Store](https://assetstore.unity.com/packages/tools/network/mirror-129321). 
+5) Compile for IOS.
+6) Add Bonjour service \_bonjourmirror.\_tcp.
+7) Install on two two IOS machines.
+8) Pressing Privacy should trigger Privacy Dialogue.  Otherwise check Privacy, local network or Reset Privacy in Settings:General.
+9) Pressing Server should create a player and broadcast the service.
+10) Pressing Client from the other machine should create similar scenes in both machines.
+
+[image]( bonjourmirror.png )
