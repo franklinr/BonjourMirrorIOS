@@ -1,5 +1,5 @@
 # BonjourMirrorIOS
-Mirror Discovery using Bonjour over Wifi for IOS
+Mirror Discovery in Unity using Bonjour over Wifi for IOS
 
 IOS 14 has changed privacy and networking such that [Mirror Network Discovery](https://mirror-networking.gitbook.io/docs/components/network-discovery) does not seem to work on my iphone.  To deal with this, I wanted to use Bonjour, which is not restricted.  After finding code examples for the server and client as Unity plugins, I was able to get that to work.
 
